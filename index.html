@@ -44,14 +44,41 @@
             <h1 class="section_name">Charles Were</h1>
             <p class="section_Job">A Frontend Web Developer</p>
             <div class="section_buttons">
-                <button class="btn_primary" onclick="window.open('assets/My Cv.pdf')">View My CV</button>
-                <button class="btn_secondary" onclick="location.href='./#contact'">Contact Info</button>
+                <button class="btn btn_primary" onclick="window.open('assets/My Cv.pdf')">View My CV</button>
+                <button class="btn btn_secondary" onclick="location.href='./#contact'">Contact Info</button>
             </div>
             <div id="socials-container">
-                <img src="assets/linkedin.png" alt="My linkedin linkedin" onclick="window.open('https://www.linkedin.com/in/charles-were-752b4b1b2/')"/>
-                <img src="assets/github.png" alt="My github profile" onclick="window.open('https://github.com/charleswereangoye')"/>
+                <img src="assets/linkedin.png" alt="My linkedin linkedin" class="icon" onclick="window.open('https://www.linkedin.com/in/charles-were-752b4b1b2/')"/>
+                <img src="assets/github.png" alt="My github profile" class="icon" onclick="window.open('https://github.com/charleswereangoye')"/>
             </div>
         </div>
+    </section>
+    <section id="about">
+        <p class="section_greeting">Get To Know More</p>
+        <h1 class="section_name">About Me</h1>
+        <div class="section-container">
+            <div class="section_pic_container">
+                <img src="assets/about.png" alt="About me profile picture" class="pose_pic"/>
+            </div>
+            <div class="about_details_container">
+                <div class="about_containers">
+                    <div class="details-container">
+                        <img src="assets/experience.png" alt="Experience icon" class="icon"/>
+                        <h3>Experience</h3>
+                        <p>1 Year <br>Frontend Web Developer</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="assets/graduation.png" alt="Education icon" class="icon"/>
+                        <h3>Education</h3>
+                        <p>Bsc in Software Engineering <br>African Leadership University</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>I'm a Frontend Web Developer with a Bsc in Software Engineering from African Leadership University. I have a passion for web development and I'm always looking to learn new skills and technologies.</p>
+                </div>
+            </div>
+        </div>
+        <img src="assets/nextpagearrow.png" alt="Next page arrow" class="icon arrow" onclick="location.href='./#experience'"/>
     </section>
     <script src="script.js"></script>
 </body>

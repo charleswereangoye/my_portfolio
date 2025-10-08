@@ -142,3 +142,148 @@ a:hover {
 
 /* SECTIONS */
 
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+}
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+.section_pic_container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.section_text {
+    align-self: center;
+    text-align: center;
+}
+
+.section_text p {
+    font-weight: 600;
+}
+
+.section_greeting {
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+.section_Job {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.section_name {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/* ICONs */
+
+.icon {
+    cursor: pointer;
+    height: 3rem;
+}
+
+/* BUTTONs */
+
+.section_buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn-primary, .btn_secondary {
+    border: rgb(53, 53, 53) 0.01rem solid;
+}
+
+.btn-primary:hover, .btn_secondary:hover {
+    cursor: pointer;
+}
+
+.btn-primary, .btn_secondary:hover {
+    background: rgb(53, 53, 53);
+    color: white;
+}
+
+.btn_primary:hover {
+    background: rgb(0, 0, 0);
+    color: white;
+}
+
+.btn_secondary {
+    background: none;
+}
+
+.btn_secondary:hover {
+    border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.section_buttons {
+    gap: 1rem;
+}
+
+/* ABOUT SECTION */
+
+#about {
+    position: relative;
+}
+
+.about_containers {
+    gap:2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about_details_container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about_containers, .about_details_container {
+    display: flex;
+}
+
+.pose_pic {
+    border-radius: 2rem;
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.section-container {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+}
