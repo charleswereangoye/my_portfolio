@@ -1,45 +1,36 @@
-# Portfolio of Charles Were Angoye
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Welcome to my personal portfolio! This website showcases my projects, skills, and accomplishments as I pursue my journey in **Software Engineering** with a focus on **Full-Stack Development**.
+## Getting Started
 
----
+First, run the development server:
 
-## 🌐 Live Demo
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-You can view the live portfolio here; https://charleswereangoye.dev/
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
----
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## 💻 About Me
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-I am **Charles Were Angoye**, a tech enthusiast and aspiring software engineer. I am passionate about creating **user-friendly web applications** and exploring innovative solutions in the field of technology.
-Currently pursuing a **Bachelor's Degree in Software Engineering** at African Leadership University, specializing in Full-Stack Development.
+## Learn More
 
----
+To learn more about Next.js, take a look at the following resources:
 
-## 🚀 How to Use
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-1. Clone this repository:
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-   ```bash
-   https://github.com/charleswereangoye/my_portfolio.git
-   ```
-2. Open `index.html` in your browser to explore the portfolio.
-3. Navigate through the project pages to see my work in detail.
+## Deploy on Vercel
 
----
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-## 📫 Contact Me
-
-* Email: [charleswereangoye@gmail.com](mailto:charleswereangoye@gmail.com)
-* Phone: +254719403678
-* LinkedIn: www.linkedin.com/in/charles-were-angoye-21a661326
-* GitHub: https://github.com/charleswereangoye
-
----
-
-## 📄 License
-
-This project is **open-source** and available under the MIT License.
-
----
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
