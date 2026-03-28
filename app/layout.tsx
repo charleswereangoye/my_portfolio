@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "../components/theme-provider";
 import { ThemeToggle } from "../components/theme-toggle";
+import Link from "next/link";
 
 // Using Inter for the clean body text
 const inter = Inter({ subsets: ["latin"], weight: ["300", "400"] });
@@ -28,12 +29,11 @@ export default function RootLayout({
           <aside className="w-48 fixed h-screen p-12 flex flex-col justify-between z-40">
             <div className="mt-8">
               <nav className="flex flex-col space-y-6 text-xs tracking-[0.2em] text-foreground/50">
-                {/* HOME link with top border - Fully opaque for active state */}
                 <div className="border-t border-foreground pt-3 w-16 transition-colors duration-300">
-                  <a href="#" className="text-foreground transition-colors duration-300">HOME</a>
+                  <Link href="/" className="text-foreground transition-colors duration-300">HOME</Link>
                 </div>
-                <a href="#" className="hover:text-foreground transition-colors">PROJECTS</a>
-                <a href="#" className="hover:text-foreground transition-colors">GALLERY</a>
+                <Link href="/projects" className="hover:text-foreground transition-colors">PROJECTS</Link>
+                <Link href="/gallery" className="hover:text-foreground transition-colors">GALLERY</Link>
               </nav>
             </div>
             
