@@ -1,44 +1,50 @@
 export const projectsData = [
   {
-    slug: "internship-platform",
-    id: "02",
-    title: "INTERNSHIP PLATFORM",
-    category: "Group Project / Full Stack",
-    shortDesc: "A dedicated platform bridging the gap between students seeking experience and companies offering internships.",
-    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop",
-    tools: ["React", "Node.js", "Express", "MongoDB"],
+    slug: "internlink-platform",
+    id: "01",
+    title: "INTERNLINK PLATFORM",
+    category: "Full Stack Web Application",
+    shortDesc: "A dedicated platform bridging the gap between students seeking experience and SMEs offering internships.",
+    image: "/internlink.png", 
+    tools: ["Python", "Flask", "Vanilla JS", "Chart.js", "Cloud SQL", "REST APIs"],
     duration: "4 weeks",
-    roles: "Frontend / Backend Collaborator",
-    summary: "Collaborated with a team to build an intuitive placement portal. Features include student portfolio uploads, company dashboard management, and an automated matching algorithm.",
-    nextProjectSlug: "school-website",
-    nextProjectTitle: "SCHOOL WEBSITE"
+    roles: "Full Stack Developer",
+    summary: "Developed 'InternLink', a comprehensive discovery portal featuring dual user flows for students and SMEs. The system includes an algorithmic skill-based matching engine, real-time application tracking, and interactive data visualization dashboards using Chart.js. The backend is driven by a custom Flask REST API, which I recently migrated from local SQLite to a scalable Cloud Database architecture.",
+    
+    // Points to your Portfolio
+    nextProjectSlug: "personal-portfolio",
+    nextProjectTitle: "PERSONAL PORTFOLIO"
   },
   {
-    slug: "school-website",
-    id: "03",
-    title: "SCHOOL WEBSITE",
-    category: "Freelance / Frontend",
-    shortDesc: "A modern, responsive landing page and informational hub for an educational institution.",
-    image: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=1200&auto=format&fit=crop",
-    tools: ["Next.js", "Tailwind CSS", "Framer Motion"],
+    slug: "personal-portfolio",
+    id: "02",
+    title: "PERSONAL PORTFOLIO",
+    category: "Frontend / UI Design",
+    shortDesc: "A minimalist, Awwwards-inspired developer portfolio featuring smooth scroll and dynamic theming.",
+    image: "/portfolio.png",
+    tools: ["Next.js", "React", "Tailwind CSS", "Framer Motion", "Lenis"],
     duration: "2 weeks",
-    roles: "Sole Developer & Designer",
-    summary: "Designed and developed a digital presence for a school to help parents easily access admission requirements, curriculum details, and contact information.",
+    roles: "Frontend Developer & Designer",
+    summary: "Designed and developed a highly interactive personal portfolio to showcase my projects and technical skills. The site leverages Next.js and Tailwind CSS for a performant foundation, enhanced with Framer Motion for cinematic page reveals and Lenis for buttery-smooth momentum scrolling. It features dynamic routing for project case studies and a custom-built light/dark theme toggle.",
+    
+    // Points to the Trading Journal
     nextProjectSlug: "trading-journal",
     nextProjectTitle: "TRADING JOURNAL"
   },
   {
     slug: "trading-journal",
-    id: "01",
+    id: "03",
     title: "TRADING JOURNAL",
     category: "Personal Project / Full Stack",
-    shortDesc: "A web application built to log, analyze, and review forex trading performance.",
-    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1200&auto=format&fit=crop",
+    shortDesc: "A custom web application built to log, analyze, and review forex trading performance.",
+    image: "/journal.png",
     tools: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL"],
     duration: "Ongoing",
-    roles: "Full Stack Developer",
-    summary: "This application allows users to track their trades, identify patterns using Smart Money Concepts, and maintain a disciplined trading psychology. Built from scratch to solve personal workflow issues in the markets.",
-    nextProjectSlug: "internship-platform",
-    nextProjectTitle: "INTERNSHIP PLATFORM"
+    roles: "Full Stack Developer & UI Designer",
+    summary: "As an active Forex trader, I realized that most premium trading journal platforms are prohibitively expensive. To solve this, I am building my own custom full-stack application. It allows me to log trades, identify market patterns—specifically utilizing Smart Money Concepts—and maintain disciplined trading psychology. The interface is currently in development, with the UI heavily inspired by high-end, modern data dashboards found on Dribbble.",
+    
+    // Points back to InternLink to complete the loop
+    nextProjectSlug: "internlink-platform",
+    nextProjectTitle: "INTERNLINK PLATFORM"
   }
 ];
