@@ -41,13 +41,13 @@ export default function Home() {
             </h2>
             <div className="space-y-6 text-[15px] text-foreground/70 leading-relaxed font-light transition-colors duration-300">
               <p>
-                I am currently pursuing a degree in Software Engineering, with a strong focus on building clean, efficient, and scalable web applications.
+                I am a dedicated Software Engineering student with a strong focus on building clean, efficient, and scalable web applications.
               </p>
               <p>
-                My main focus is full-stack development, and I enjoy exploring new technologies, refining system architectures, and experimenting with creative technical solutions.
+                My primary interest is in full-stack development, where I enjoy designing systems, exploring modern technologies, and developing practical, high quality solutions.
               </p>
               <p>
-                Outside of programming, I spend my time analyzing the XAU/USD market and creating educational content for my channel.
+                Beyond programming, I do analyze and trade on financial markets and create educational content, which strengthens my analytical thinking and communication skills.
               </p>
             </div>
           </div>
@@ -65,10 +65,10 @@ export default function Home() {
             </h2>
             <div className="space-y-6 text-[15px] text-foreground/70 leading-relaxed font-light transition-colors duration-300">
               <p>
-                I am a software engineer with a growing focus on full-stack development. While I am still exploring where I want my career to evolve, I have discovered that building seamless user experiences is what excites me the most.
+                When you interact with an application, it should feel seamless and intuitive.
               </p>
               <p>
-                That is why I am currently dedicating my energy to improving both my technical execution and design sensitivity across the entire stack.
+                That’s the approach I bring to development, building solutions that are efficient, user focused, and designed to solve real problems.
               </p>
             </div>
           </div>
@@ -116,7 +116,7 @@ export default function Home() {
             <div>
               <h3 className="text-[15px] tracking-[0.1em] text-foreground mb-6 transition-colors duration-300">FRONTEND</h3>
               <div className="flex flex-wrap gap-3">
-                {['TypeScript', 'React.js', 'Next.js', 'Tailwind CSS', 'Framer Motion', 'Zustand'].map((skill) => (
+                {['HTML', 'CSS', 'Tailwind CSS', 'Javascript', 'Typescript', 'React', 'Next.js', 'Respnsive Web Design', 'UI Development'].map((skill) => (
                   <span key={skill} className="hover-target px-5 py-2 rounded-full border border-foreground/30 text-[13px] font-light text-foreground/70 hover:border-foreground/80 hover:text-foreground transition-colors cursor-default">
                     {skill}
                   </span>
@@ -128,7 +128,7 @@ export default function Home() {
             <div>
               <h3 className="text-[15px] tracking-[0.1em] text-foreground mb-6 transition-colors duration-300">BACKEND</h3>
               <div className="flex flex-wrap gap-3">
-                {['Node.js', 'Python', 'Java', 'SQL', 'PostgreSQL', 'REST APIs'].map((skill) => (
+                {['Python', 'Node.js', 'Database (SQL & PostgreSQL)', 'Enterprise Architech', 'REST APIs'].map((skill) => (
                   <span key={skill} className="hover-target px-5 py-2 rounded-full border border-foreground/30 text-[13px] font-light text-foreground/70 hover:border-foreground/80 hover:text-foreground transition-colors cursor-default">
                     {skill}
                   </span>
@@ -140,7 +140,7 @@ export default function Home() {
             <div>
               <h3 className="text-[15px] tracking-[0.1em] text-foreground mb-6 transition-colors duration-300">TOOLS</h3>
               <div className="flex flex-wrap gap-3">
-                {['Git', 'VSCode', 'Figma', 'Linux', 'Docker', 'Vercel'].map((skill) => (
+                {['Linux', 'Comandline', 'Git', 'VSCode', 'Figma', 'Podman'].map((skill) => (
                   <span key={skill} className="hover-target px-5 py-2 rounded-full border border-foreground/30 text-[13px] font-light text-foreground/70 hover:border-foreground/80 hover:text-foreground transition-colors cursor-default">
                     {skill}
                   </span>

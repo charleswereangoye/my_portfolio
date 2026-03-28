@@ -1,19 +1,5 @@
 export const projectsData = [
   {
-    slug: "trading-journal",
-    id: "01",
-    title: "TRADING JOURNAL",
-    category: "Personal Project / Full Stack",
-    shortDesc: "A web application built to log, analyze, and review forex trading performance.",
-    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1200&auto=format&fit=crop",
-    tools: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL"],
-    duration: "Ongoing",
-    roles: "Full Stack Developer",
-    summary: "This application allows users to track their trades, identify patterns using Smart Money Concepts, and maintain a disciplined trading psychology. Built from scratch to solve personal workflow issues in the markets.",
-    nextProjectSlug: "internship-platform",
-    nextProjectTitle: "INTERNSHIP PLATFORM"
-  },
-  {
     slug: "internship-platform",
     id: "02",
     title: "INTERNSHIP PLATFORM",
@@ -40,5 +26,19 @@ export const projectsData = [
     summary: "Designed and developed a digital presence for a school to help parents easily access admission requirements, curriculum details, and contact information.",
     nextProjectSlug: "trading-journal",
     nextProjectTitle: "TRADING JOURNAL"
+  },
+  {
+    slug: "trading-journal",
+    id: "01",
+    title: "TRADING JOURNAL",
+    category: "Personal Project / Full Stack",
+    shortDesc: "A web application built to log, analyze, and review forex trading performance.",
+    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1200&auto=format&fit=crop",
+    tools: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL"],
+    duration: "Ongoing",
+    roles: "Full Stack Developer",
+    summary: "This application allows users to track their trades, identify patterns using Smart Money Concepts, and maintain a disciplined trading psychology. Built from scratch to solve personal workflow issues in the markets.",
+    nextProjectSlug: "internship-platform",
+    nextProjectTitle: "INTERNSHIP PLATFORM"
   }
 ];
