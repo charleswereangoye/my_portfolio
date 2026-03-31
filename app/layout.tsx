@@ -16,6 +16,13 @@ export const metadata: Metadata = {
   description: "Portfolio of Charles Were Angoye (Chalee Black Trades), a Software Engineer specializing in full-stack development and financial market analysis.",
   keywords: ["Charles Were Angoye", "Chalee Black Trades", "Software Engineer", "Forex Trader", "XAUUSD", "Web Developer", "Next.js"],
   authors: [{ name: "Charles Were Angoye" }],
+
+icons: {
+    icon: '/icon.png', 
+    shortcut: '/icon.png',
+    apple: '/icon.png', // This makes it look good if someone saves it to their iPhone home screen
+  },
+  
   openGraph: {
     title: "Charles Were Angoye",
     description: "Software Engineering student and Forex Trader.",
