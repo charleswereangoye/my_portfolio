@@ -26,10 +26,37 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
         <h1 className={`${jost.className} text-4xl md:text-5xl font-light tracking-tight text-foreground`}>
           {project.title}
         </h1>
+        
+        {/* --- UPDATED BUTTONS SECTION --- */}
         <div className="flex gap-6 text-sm md:text-base text-foreground/60 tracking-wider">
-          <a href="#" className="hover:text-foreground transition-colors">GitHub &#8599;</a>
-          <a href="#" className="hover:text-foreground transition-colors">Demo &#8599;</a>
+          
+          {/* Only show GitHub link if the URL is provided in projectsData */}
+          {project.githubUrl && (
+            <a 
+              href={project.githubUrl} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-foreground transition-colors"
+            >
+              GitHub &#8599;
+            </a>
+          )}
+
+          {/* Only show Demo link if the URL is provided in projectsData */}
+          {project.demoUrl && (
+            <a 
+              href={project.demoUrl} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-foreground transition-colors"
+            >
+              Demo &#8599;
+            </a>
+          )}
+          
         </div>
+        {/* ------------------------------- */}
+
       </div>
 
       <div className="w-full aspect-video bg-foreground/5 mb-16 md:mb-24 overflow-hidden border border-foreground/10 rounded-sm">
