@@ -5,7 +5,8 @@ import { ThemeProvider } from "../components/theme-provider";
 import { ThemeToggle } from "../components/theme-toggle";
 import { SmoothScroll } from "../components/smooth-scroll";
 import Link from "next/link";
-import { MobileHeader } from "../components/mobile-header"; 
+import { MobileHeader } from "../components/mobile-header";
+import { DesktopNav } from "../components/desktop-nav"; 
 
 const jost = Jost({ subsets: ["latin"], weight: ["300", "400"] });
 const inter = Inter({ subsets: ["latin"], weight: ["300", "400"] });
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
   keywords: ["Charles Were Angoye", "Chalee Black Trades", "Software Engineer", "Forex Trader", "XAUUSD", "Web Developer", "Next.js"],
   authors: [{ name: "Charles Were Angoye" }],
 
-icons: {
+  icons: {
     icon: '/icon.png', 
     shortcut: '/icon.png',
     apple: '/icon.png', // This makes it look good if someone saves it to their iPhone home screen
@@ -60,13 +61,8 @@ export default function RootLayout({
             {/* --- DESKTOP SIDEBAR --- */}
             <aside className="hidden md:flex w-48 fixed h-screen p-12 flex-col justify-between z-40">
               <div className="mt-8">
-                <nav className="flex flex-col space-y-6 text-xs tracking-[0.2em] text-foreground/50">
-                  <div className="border-t border-foreground pt-3 w-16 transition-colors duration-300">
-                    <Link href="/" className="text-foreground transition-colors duration-300">HOME</Link>
-                  </div>
-                  <Link href="/projects" className="hover:text-foreground transition-colors">PROJECTS</Link>
-                  <Link href="/outro" className="hover:text-foreground transition-colors">OUTRO</Link>
-                </nav>
+                {/* --- THIS IS THE ONLY CHANGE: Replaced with the DesktopNav component --- */}
+                <DesktopNav />
               </div>
               
               {/* --- UPDATED SOCIAL ICONS --- */}
