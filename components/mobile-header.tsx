@@ -60,15 +60,20 @@ export function MobileHeader() {
           <Link href="/projects" className={`${jost.className} text-2xl tracking-[0.2em] font-light text-foreground hover:opacity-50 transition-opacity`}>PROJECTS</Link>
           <Link href="/outro" className={`${jost.className} text-2xl tracking-[0.2em] font-light text-foreground hover:opacity-50 transition-opacity`}>OUTRO</Link>
           
-          {/* Theme Button matches the exact styling of the links above */}
+          {/* --- UPDATED THEME BUTTON --- */}
           {mounted && (
             <button 
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+              onClick={() => {
+                setTheme(theme === "dark" ? "light" : "dark");
+                setIsOpen(false); // <--- This forces the menu to close!
+              }}
               className={`${jost.className} text-2xl tracking-[0.2em] font-light text-foreground hover:opacity-50 transition-opacity uppercase`}
             >
               THEME
             </button>
           )}
+          {/* ---------------------------- */}
+          
         </nav>
       </div>
     </header>
