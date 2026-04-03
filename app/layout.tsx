@@ -13,6 +13,7 @@ const inter = Inter({ subsets: ["latin"], weight: ["300", "400"] });
 
 // --- MASSIVE SEO UPGRADE ---
 export const metadata: Metadata = {
+  metadataBase: new URL("https://charleswereangoye.dev"),
   title: "Charles Were Angoye",
   description: "Portfolio of Charles Were Angoye (Chalee Black Trades), a Software Engineer specializing in full-stack development and financial market analysis.",
   keywords: ["Charles Were Angoye", "Chalee Black Trades", "Software Engineer", "Forex Trader", "XAUUSD", "Web Developer", "Next.js"],
