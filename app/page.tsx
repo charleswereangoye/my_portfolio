@@ -1,5 +1,6 @@
 import { Jost } from "next/font/google";
 import { FadeIn } from "../components/fade-in";
+import TextReveal from "../components/text-reveal"; // <-- Added the import
 
 // We keep Jost exclusively for headings to maintain the sharp design
 const jostHeading = Jost({ subsets: ["latin"], weight: ["100"] });
@@ -9,29 +10,34 @@ export default function Home() {
   return (
     <div className="flex flex-col max-w-[1400px] w-full mt-12 pb-32 space-y-32 md:space-y-48">
       
-      {/* ----------------- SECTION 1: HERO ----------------- */}
+      {/* ----------------- SECTION 1: HERO (UPGRADED) ----------------- */}
       <FadeIn delay={0.2}>
-        {/* Changed to flex-col for mobile, grid for desktop */}
         <div className="flex flex-col md:grid md:grid-cols-12 gap-12 items-start w-full min-h-[auto] md:min-h-[80vh]">
           
           <div className="md:col-span-7 flex flex-col justify-between h-full">
             <div>
-              {/* Responsive text sizing: text-6xl on mobile, text-[7.5rem] on desktop */}
-              <h1 className={`${jostHeading.className} text-6xl md:text-[7.5rem] leading-[1.05] tracking-tight mb-4 md:mb-6 text-foreground transition-colors duration-300`}>
-                CHARLES<br />WERE
+              {/* Added flex-col so the two animated words stack perfectly like your <br/> did */}
+              <h1 className={`${jostHeading.className} text-6xl md:text-[7.5rem] leading-[1.05] tracking-tight mb-4 md:mb-6 text-foreground transition-colors duration-300 flex flex-col`}>
+                <TextReveal text="CHARLES" delay={1} />
+                <TextReveal text="WERE" delay={3} />
               </h1>
-              <p className={`${jostSub.className} text-foreground/60 text-sm md:text-[15px] tracking-wide transition-colors duration-300`}>
-                Software Engineer / Developer
-              </p>
+              
+              <TextReveal 
+                text="Software Engineer / Developer"
+                className={`${jostSub.className} text-foreground/60 text-sm md:text-[15px] tracking-wide transition-colors duration-300`}
+                delay={6}
+              />
             </div>
 
             <div className="mt-16 md:mt-40">
-              <p className="text-foreground/60 text-sm md:text-[15px] transition-colors duration-300">
-                For business inquiries, email me at<br />
-                <a href="mailto:charleswereangoye@gmail.com" className="text-foreground/80 hover:text-foreground transition-colors mt-1 inline-block">
-                  charleswereangoye@gmail.com
-                </a>
-              </p>
+              <FadeIn delay={1.2}>
+                <p className="text-foreground/60 text-sm md:text-[15px] transition-colors duration-300">
+                  For business inquiries, email me at<br />
+                  <a href="mailto:charleswereangoye@gmail.com" className="text-foreground/80 hover:text-foreground transition-colors mt-1 inline-block">
+                    charleswereangoye@gmail.com
+                  </a>
+                </p>
+              </FadeIn>
             </div>
           </div>
 
@@ -40,15 +46,18 @@ export default function Home() {
               ABOUT ME
             </h2>
             <div className="space-y-6 text-sm md:text-[15px] text-foreground/70 leading-relaxed font-light transition-colors duration-300">
-              <p>
-                I am a dedicated Software Engineering student with a strong focus on building clean, efficient, and scalable web applications.
-              </p>
-              <p>
-                My primary interest is in full-stack development, where I enjoy designing systems, exploring modern technologies, and developing practical, high quality solutions.
-              </p>
-              <p>
-                Beyond programming, I do analyze and trade on financial markets and create educational content, which strengthens my analytical thinking and communication skills.
-              </p>
+              <TextReveal 
+                text="I am a dedicated Software Engineering student with a strong focus on building clean, efficient, and scalable web applications." 
+                delay={8} 
+              />
+              <TextReveal 
+                text="My primary interest is in full-stack development, where I enjoy designing systems, exploring modern technologies, and developing practical, high quality solutions." 
+                delay={10} 
+              />
+              <TextReveal 
+                text="Beyond programming, I do analyze and trade on financial markets and create educational content, which strengthens my analytical thinking and communication skills." 
+                delay={12} 
+              />
             </div>
           </div>
         </div>
